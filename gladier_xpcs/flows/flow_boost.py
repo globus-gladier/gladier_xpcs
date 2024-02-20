@@ -63,6 +63,7 @@ class XPCSBoost(GladierBaseClient):
         groups = [self.globus_group]
         if group:
             groups.append(group)
+        groups = [f"urn:globus:groups:id:{g}" for g in groups]
 
         flow_input = {
             'input': {
