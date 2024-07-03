@@ -18,7 +18,7 @@ RESOURCE_SERVER = '74defd5b-5f61-42fc-bcc4-834c9f376a4f'
 AVAILABLE_DEPLOYMENTS = {
     'aps8idi-polaris',
     # 'nersc'
-    'aps8idi-polaris-backup',
+    # 'aps8idi-polaris-backup',
 }
 
 SEARCH_INDEXES = {
@@ -40,11 +40,11 @@ SEARCH_INDEXES = {
         'template_override_dir': 'xpcs',
         # Automatically append these filters to all searches
         # Currently, this is used to hide a globus-pilot record used for tracking project data
-        'default_filters': [{
-            'type': 'match_all',
-            'field_name': 'project_metadata.project-slug',
-            'values': ['xpcs-8id']
-        }],
+        # 'default_filters': [{
+        #     'type': 'match_all',
+        #     'field_name': 'project_metadata.project-slug',
+        #     'values': ['xpcs-8id']
+        # }],
         'description': (
             'X-ray Photon Correlation Spectroscopy (XPCS) is a technique to '
             'study dynamics in materials at nanoscale by identifying '
